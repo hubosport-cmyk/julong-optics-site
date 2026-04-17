@@ -6,42 +6,33 @@
     <title>Julong Optics | Professional Sports Eyewear Manufacturer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Animate On Scroll Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-        
         body { font-family: 'Inter', sans-serif; }
-        
         .hero-gradient {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('https://sc02.alicdn.com/kf/A95546b1c18bd4e0698b3b14f22b2ae06e.png');
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('https://sc02.alicdn.com/kf/Ab8c1b52b468d45f8b9a04de2d269484af.png');
             background-size: cover;
             background-position: center 30%;
             background-attachment: fixed;
         }
-        
         .glass-card {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.08);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-        
         .glass-card:hover {
             background: rgba(255, 255, 255, 0.06);
             border: 1px solid rgba(59, 130, 246, 0.5);
             transform: translateY(-10px);
         }
-
         .text-gradient {
             background: linear-gradient(to right, #ffffff, #94a3b8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
-        .nav-link {
-            position: relative;
-        }
+        .nav-link { position: relative; }
         .nav-link::after {
             content: '';
             position: absolute;
@@ -52,18 +43,14 @@
             background-color: #3b82f6;
             transition: width 0.3s ease;
         }
-        .nav-link:hover::after {
-            width: 100%;
-        }
+        .nav-link:hover::after { width: 100%; }
     </style>
 </head>
 <body class="bg-[#050505] text-gray-200">
-
-    <!-- Header -->
     <header class="fixed w-full z-50 top-0 left-0 transition-all duration-300 px-6 py-4" id="main-nav">
         <div class="max-w-7xl mx-auto flex justify-between items-center backdrop-blur-md bg-black/20 rounded-2xl px-8 py-3 border border-white/5">
-            <div class="text-2xl font-extrabold tracking-tighter text-blue-500">
-                JULONG <span class="text-white font-light">OPTICS</span>
+            <div class="text-2xl font-extrabold tracking-tighter text-blue-500 uppercase">
+                JULONG <span class="text-white font-light lowercase">OPTICS</span>
             </div>
             <nav class="hidden md:flex space-x-10 text-sm font-semibold tracking-wide uppercase">
                 <a href="#products" class="nav-link hover:text-white transition">Catalog</a>
@@ -76,8 +63,6 @@
             </a>
         </div>
     </header>
-
-    <!-- Hero -->
     <section class="relative min-h-screen flex items-center justify-center hero-gradient pt-20 overflow-hidden" id="hero-section">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_black_90%)]"></div>
         <div class="relative z-10 max-w-5xl mx-auto px-6 text-center" data-aos="fade-up" data-aos-duration="1200">
@@ -89,7 +74,7 @@
                 <span>Global OEM/ODM Authority</span>
             </div>
             <h1 class="text-6xl md:text-8xl font-extrabold mb-8 leading-[1.1] text-gradient uppercase" id="hero-title">
-                ENGINEERED FOR THE <br/><span class="text-blue-500">EXTREME.</span>
+                ENGINEERED FOR THE <br/><span class="text-blue-500 uppercase">EXTREME.</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed" id="hero-subtitle">
                 Premium sports eyewear manufacturer specializing in professional sports sunglasses and advanced optical systems. Delivering precision, durability, and style since 2012.
@@ -103,38 +88,31 @@
                 </a>
             </div>
         </div>
-        <!-- Scroll Indicator -->
         <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
             <i class="fa-solid fa-chevron-down text-gray-600"></i>
         </div>
     </section>
-
-    <!-- Quality Standards -->
     <section class="py-12 border-y border-white/5 bg-black/50">
         <div class="max-w-7xl mx-auto px-6 overflow-hidden">
-            <p class="text-center text-xs font-bold text-gray-500 uppercase tracking-[0.3em] mb-8">Global Industry Standards</p>
+            <p class="text-center text-xs font-bold text-gray-500 uppercase tracking-[0.3em] mb-8">Trusted by global outdoor brands</p>
             <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale hover:grayscale-0 transition duration-500">
-                <i class="fa-solid fa-certificate text-4xl"></i>
-                <i class="fa-solid fa-shield-halved text-4xl"></i>
-                <i class="fa-solid fa-award text-4xl"></i>
-                <i class="fa-solid fa-microchip text-4xl"></i>
-                <i class="fa-solid fa-check-double text-4xl"></i>
+                <i class="fa-brands fa-stripe-s text-4xl"></i>
+                <i class="fa-brands fa-nfc-symbol text-4xl"></i>
+                <i class="fa-brands fa-battle-net text-4xl"></i>
+                <i class="fa-brands fa-vimeo text-4xl"></i>
+                <i class="fa-brands fa-unity text-4xl"></i>
             </div>
         </div>
     </section>
-
-    <!-- Products -->
     <section id="products" class="py-32 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-20" data-aos="fade-up">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Our Flagship Series</h2>
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 uppercase">Our Flagship Series</h2>
             <div class="h-1.5 w-20 bg-blue-600 mx-auto rounded-full"></div>
         </div>
-        
         <div class="grid lg:grid-cols-2 gap-16">
-            <!-- Product 1: HB-Series Performance Kits -->
             <div class="group" data-aos="fade-right">
                 <div class="relative overflow-hidden rounded-[2.5rem] bg-zinc-900 mb-8 border border-white/5 aspect-[4/5]">
-                    <img src="https://sc02.alicdn.com/kf/Ad786e095fd1d4077a0ad8c841b4206c0i.png" alt="HB Series" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="https://sc02.alicdn.com/kf/A2af098b36acb449a839d483326c9594cL.png" alt="HB Series" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent p-12 flex flex-col justify-end">
                         <span class="text-blue-500 font-bold uppercase tracking-widest text-xs mb-4">Elite Series</span>
                         <h3 class="text-4xl font-extrabold mb-4 italic uppercase">HB-SERIES KITS</h3>
@@ -146,10 +124,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Product 2: Aero-Flow Elite -->
             <div class="group mt-12 lg:mt-24" data-aos="fade-left">
                 <div class="relative overflow-hidden rounded-[2.5rem] bg-zinc-900 mb-8 border border-white/5 aspect-[4/5]">
-                    <img src="https://sc02.alicdn.com/kf/A7d5cc73fcfc346f89816816688ccc877P.png" alt="Sports Aero" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="https://sc02.alicdn.com/kf/A77359a3b8f7a47a6a277cdb911012ce1k.png" alt="Sports Aero" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent p-12 flex flex-col justify-end">
                         <span class="text-blue-500 font-bold uppercase tracking-widest text-xs mb-4">Cycling & Training</span>
                         <h3 class="text-4xl font-extrabold mb-4 italic uppercase">AERO-FLOW ELITE</h3>
@@ -163,36 +140,28 @@
             </div>
         </div>
     </section>
-
-    <!-- Tech Specs -->
     <section id="tech" class="py-32 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-20 items-center">
                 <div data-aos="fade-right">
-                    <h2 class="text-4xl font-extrabold mb-8 leading-tight">Advanced Optical <br/><span class="text-blue-500">Integrity.</span></h2>
+                    <h2 class="text-4xl font-extrabold mb-8 leading-tight uppercase">Advanced Optical <br/><span class="text-blue-500 uppercase italic">Integrity.</span></h2>
                     <div class="space-y-10">
                         <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500">
-                                <i class="fa-solid fa-wind"></i>
-                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500"><i class="fa-solid fa-wind"></i></div>
                             <div>
                                 <h4 class="text-lg font-bold mb-2">Dual-Vent Airflow</h4>
                                 <p class="text-gray-500 text-sm">Sophisticated ventilation channels eliminate fogging while maintaining temperature balance inside the lens.</p>
                             </div>
                         </div>
                         <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500">
-                                <i class="fa-solid fa-eye-slash"></i>
-                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500"><i class="fa-solid fa-eye-slash"></i></div>
                             <div>
                                 <h4 class="text-lg font-bold mb-2">Zero-Distortion Polycarbonate</h4>
                                 <p class="text-gray-500 text-sm">Aerospace-grade PC material ensures perfect optical clarity without refractive errors during high-speed movement.</p>
                             </div>
                         </div>
                         <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500">
-                                <i class="fa-solid fa-hammer"></i>
-                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500"><i class="fa-solid fa-hammer"></i></div>
                             <div>
                                 <h4 class="text-lg font-bold mb-2">Ultimate Impact Protection</h4>
                                 <p class="text-gray-500 text-sm">Meets ANSI Z87.1 high-velocity impact standards to protect the user from flying debris and high-speed crashes.</p>
@@ -202,20 +171,17 @@
                 </div>
                 <div class="relative" data-aos="zoom-in">
                     <div class="absolute -inset-10 bg-blue-600/10 blur-[100px] rounded-full"></div>
-                    <img src="https://sc02.alicdn.com/kf/Ab0ada308ec26419fae3338a9bf0b915ev.png" class="relative rounded-3xl border border-white/10 shadow-2xl" alt="Tech">
+                    <img src="https://sc02.alicdn.com/kf/A2af098b36acb449a839d483326c9594cL.png" class="relative rounded-3xl border border-white/10 shadow-2xl" alt="Tech">
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Manufacturing -->
     <section id="factory" class="py-32">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-20" data-aos="fade-up">
                 <span class="text-blue-500 font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block underline decoration-4 underline-offset-8">Production Excellence</span>
-                <h2 class="text-4xl font-extrabold mt-8 uppercase">B2B Manufacturing Partner</h2>
+                <h2 class="text-4xl font-extrabold mt-8 uppercase italic">B2B Manufacturing Partner</h2>
             </div>
-            
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="glass-card p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-4xl text-blue-600 mb-8"><i class="fa-solid fa-warehouse"></i></div>
@@ -235,97 +201,77 @@
             </div>
         </div>
     </section>
-
-    <!-- FAQ -->
     <section id="faq" class="py-32 bg-zinc-950 px-6">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-extrabold mb-16 text-center">B2B FAQ</h2>
+            <h2 class="text-3xl font-extrabold mb-16 text-center uppercase">B2B FAQ</h2>
             <div class="space-y-6">
                 <div class="bg-white/5 p-8 rounded-2xl border border-white/5">
-                    <h5 class="text-lg font-bold mb-3">What is your MOQ for OEM orders?</h5>
+                    <h5 class="text-lg font-bold mb-3 uppercase">What is your MOQ for OEM orders?</h5>
                     <p class="text-gray-500 text-sm leading-relaxed">Typically 300 units per color. For initial testing, we can support small batches of 100 units depending on the model.</p>
                 </div>
                 <div class="bg-white/5 p-8 rounded-2xl border border-white/5">
-                    <h5 class="text-lg font-bold mb-3">Can I get custom logo and packaging?</h5>
+                    <h5 class="text-lg font-bold mb-3 uppercase">Can I get custom logo and packaging?</h5>
                     <p class="text-gray-500 text-sm leading-relaxed">Yes. We provide logo silk printing, lens laser engraving, custom straps, and full branding packaging solutions.</p>
                 </div>
                 <div class="bg-white/5 p-8 rounded-2xl border border-white/5">
-                    <h5 class="text-lg font-bold mb-3">How long is the mass production lead time?</h5>
+                    <h5 class="text-lg font-bold mb-3 uppercase">How long is the mass production lead time?</h5>
                     <p class="text-gray-500 text-sm leading-relaxed">Usually 25-35 days after deposit and sample confirmation, depending on the current production schedule.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Inquiry -->
     <section id="inquiry" class="py-32 px-6">
         <div class="max-w-6xl mx-auto bg-blue-600 rounded-[3rem] p-12 md:p-20 relative overflow-hidden flex flex-col lg:flex-row gap-20 items-center">
             <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
-            
             <div class="lg:w-1/2 relative z-10" data-aos="fade-right">
-                <h2 class="text-5xl font-extrabold text-white mb-8 leading-tight uppercase">Ready to Scale Your Business?</h2>
+                <h2 class="text-5xl font-extrabold text-white mb-8 leading-tight text-white uppercase italic">Ready to Scale Your Business?</h2>
                 <p class="text-blue-100 text-lg mb-12 max-w-md">Our specialized export team is ready to provide you with a competitive wholesale quote and customization plan.</p>
                 <div class="space-y-4">
-                    <div class="flex items-center gap-4 text-white font-bold">
-                        <i class="fa-solid fa-check-circle"></i>
-                        <span>12h Rapid Response</span>
-                    </div>
-                    <div class="flex items-center gap-4 text-white font-bold">
-                        <i class="fa-solid fa-check-circle"></i>
-                        <span>Custom OEM Strategy</span>
-                    </div>
+                    <div class="flex items-center gap-4 text-white font-bold"><i class="fa-solid fa-check-circle"></i><span>12h Rapid Response</span></div>
+                    <div class="flex items-center gap-4 text-white font-bold"><i class="fa-solid fa-check-circle"></i><span>Custom OEM Strategy</span></div>
                 </div>
             </div>
-
             <div class="lg:w-1/2 w-full bg-black/20 backdrop-blur-xl p-8 md:p-12 rounded-[2rem] border border-white/10" data-aos="fade-left">
                 <form action="mailto:hubosports01@hubo-sports.com" method="GET" enctype="text/plain" class="space-y-6 text-white">
                     <div class="grid sm:grid-cols-2 gap-6">
                         <div class="space-y-2">
-                            <label class="text-xs font-bold uppercase tracking-widest text-blue-200">Full Name</label>
+                            <label class="text-xs font-bold uppercase tracking-widest text-blue-200 uppercase italic">Full Name</label>
                             <input type="text" name="name" required class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:border-white focus:bg-white/10 outline-none transition text-white" placeholder="John Doe">
                         </div>
-                        <div class="space-y-2">
-                            <label class="text-xs font-bold uppercase tracking-widest text-blue-200">Work Email</label>
+                        <div class="space-y-2 text-white">
+                            <label class="text-xs font-bold uppercase tracking-widest text-blue-200 uppercase italic">Work Email</label>
                             <input type="email" name="email" required class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:border-white focus:bg-white/10 outline-none transition text-white" placeholder="john@brand.com">
                         </div>
                     </div>
-                    <div class="space-y-2">
-                        <label class="text-xs font-bold uppercase tracking-widest text-blue-200">Subject</label>
-                        <select name="subject" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:border-white focus:bg-white/10 outline-none transition appearance-none text-white">
+                    <div class="space-y-2 text-white">
+                        <label class="text-xs font-bold uppercase tracking-widest text-blue-200 uppercase italic">Subject</label>
+                        <select name="subject" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:border-white focus:bg-white/10 outline-none transition appearance-none text-white uppercase italic">
                             <option value="Sports Sunglasses Bulk Inquiry">Sports Sunglasses Bulk Inquiry</option>
                             <option value="Ski Goggles Bulk Inquiry">Ski Goggles Bulk Inquiry</option>
                             <option value="Custom OEM Project">Custom OEM Project</option>
                         </select>
                     </div>
-                    <div class="space-y-2">
-                        <label class="text-xs font-bold uppercase tracking-widest text-blue-200">Your Requirements</label>
+                    <div class="space-y-2 text-white">
+                        <label class="text-xs font-bold uppercase tracking-widest text-blue-200 uppercase italic">Your Requirements</label>
                         <textarea name="body" required class="w-full bg-white/5 border border-white/10 rounded-xl p-4 h-32 focus:border-white focus:bg-white/10 outline-none transition text-white" placeholder="Please specify your order quantity and customization needs..."></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-white text-blue-600 py-5 rounded-2xl font-extrabold text-sm uppercase tracking-widest hover:bg-black hover:text-white transition-all shadow-xl shadow-black/20">
-                        Submit Inquiry
-                    </button>
+                    <button type="submit" class="w-full bg-white text-blue-600 py-5 rounded-2xl font-extrabold text-sm uppercase tracking-widest hover:bg-black hover:text-white transition-all shadow-xl shadow-black/20 italic">Submit Inquiry</button>
                     <p class="text-center text-[10px] text-blue-200 opacity-60 italic">* Clicking will open your default email app.</p>
                 </form>
             </div>
         </div>
     </section>
-
-    <!-- Floating WhatsApp -->
     <a href="https://wa.me/8613450284642" target="_blank" class="fixed bottom-10 right-10 z-[100] bg-[#25D366] text-white p-5 rounded-full shadow-2xl hover:scale-110 transition active:scale-95 group">
-        <div class="absolute -top-12 right-0 bg-white text-black text-[10px] font-bold py-1 px-3 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
-            Chat on WhatsApp
-        </div>
+        <div class="absolute -top-12 right-0 bg-white text-black text-[10px] font-bold py-1 px-3 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap">Chat on WhatsApp</div>
         <i class="fa-brands fa-whatsapp text-3xl"></i>
     </a>
-
-    <!-- Footer -->
     <footer class="py-20 border-t border-white/5 px-6">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
             <div>
-                <div class="text-2xl font-black text-blue-500 mb-4">JULONG <span class="text-white font-light">OPTICS</span></div>
+                <div class="text-2xl font-black text-blue-500 mb-4 uppercase">JULONG <span class="text-white font-light lowercase">OPTICS</span></div>
                 <p class="text-gray-500 max-w-sm text-sm" id="footer-description">Professional manufacturer of high-end sports eyewear for the global market. Excellence in every lens.</p>
             </div>
-            <div class="flex gap-12 text-sm">
+            <div class="flex gap-12 text-sm uppercase italic">
                 <div class="space-y-4">
                     <p class="font-bold text-gray-200 uppercase tracking-widest">Connect</p>
                     <a href="#" class="block text-gray-500 hover:text-blue-500">LinkedIn</a>
@@ -338,61 +284,34 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto mt-20 pt-12 border-t border-white/5 text-center text-xs text-gray-600 tracking-widest">
-            © 2026 JULONG OPTICS CO., LTD. DOMAIN: JULONGOPTICS.COM
-        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-12 border-t border-white/5 text-center text-xs text-gray-600 tracking-widest uppercase italic">© 2026 JULONG OPTICS CO., LTD. DOMAIN: JULONGOPTICS.COM</div>
     </footer>
-
-    <!-- AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            once: true,
-            offset: 100
-        });
-
+        AOS.init({ once: true, offset: 100 });
         window.onscroll = function() {
             const nav = document.getElementById('main-nav');
-            if (window.pageYOffset > 50) {
-                nav.classList.add('py-2');
-            } else {
-                nav.classList.remove('py-2');
-            }
+            if (window.pageYOffset > 50) nav.classList.add('py-2');
+            else nav.classList.remove('py-2');
         }
-
-        // Dynamic Data Fetching
         async function loadDynamicData() {
             try {
-                const [heroRes, settingsRes] = await Promise.all([
-                    fetch('/data/hero.json'),
-                    fetch('/data/settings.json')
-                ]);
-                
+                const [heroRes, settingsRes] = await Promise.all([fetch('/data/hero.json'), fetch('/data/settings.json')]);
                 if (heroRes.ok) {
                     const hero = await heroRes.json();
-                    document.getElementById('hero-title').innerHTML = hero.title.replace(/\\n/g, '<br/>');
+                    document.getElementById('hero-title').innerHTML = hero.title.replace(/\n/g, '<br/>');
                     document.getElementById('hero-subtitle').innerText = hero.subtitle;
-                    if (hero.bg_image) {
-                        document.getElementById('hero-section').style.backgroundImage = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('${hero.bg_image}')`;
-                    }
+                    if (hero.bg_image) document.getElementById('hero-section').style.backgroundImage = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('${hero.bg_image}')`;
                 }
-                
                 if (settingsRes.ok) {
                     const settings = await settingsRes.json();
                     const waLink = document.querySelector('a[href*="wa.me"]');
-                    if (waLink && settings.whatsapp) {
-                        waLink.href = `https://wa.me/${settings.whatsapp.replace(/\\D/g, '')}`;
-                    }
+                    if (waLink && settings.whatsapp) waLink.href = `https://wa.me/${settings.whatsapp.replace(/\D/g, '')}`;
                     const mailForm = document.querySelector('form[action^="mailto:"]');
-                    if (mailForm && settings.email) {
-                        mailForm.action = `mailto:${settings.email}`;
-                    }
+                    if (mailForm && settings.email) mailForm.action = `mailto:${settings.email}`;
                 }
-            } catch (e) {
-                console.log("Dynamic data failed to load, using default content.");
-            }
+            } catch (e) { console.log("Dynamic data failed to load, using default content."); }
         }
-        
         loadDynamicData();
     </script>
 </body>
