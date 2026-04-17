@@ -65,7 +65,21 @@
             <div class="text-2xl font-extrabold tracking-tighter text-blue-500 uppercase">
                 JULONG <span class="text-white font-light lowercase">OPTICS</span>
             </div>
-            <nav class="hidden md:flex space-x-10 text-sm font-semibold tracking-wide uppercase">
+            <nav class="hidden md:flex space-x-10 text-sm font-semibold tracking-wide uppercase items-center">
+                <!-- Prominent Product Categories -->
+                <div class="group relative">
+                    <button class="nav-link flex items-center gap-2 hover:text-white transition text-blue-500">
+                        Products <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                    </button>
+                    <div class="absolute top-full left-0 mt-4 w-56 bg-zinc-900 border border-white/10 rounded-2xl p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60] shadow-2xl">
+                        <div class="space-y-4">
+                            <a href="#products" class="block text-xs hover:text-blue-500 transition border-b border-white/5 pb-2">Cycling Eyewear</a>
+                            <a href="#products" class="block text-xs hover:text-blue-500 transition border-b border-white/5 pb-2">Ski Goggles</a>
+                            <a href="#products" class="block text-xs hover:text-blue-500 transition border-b border-white/5 pb-2">HB Series Kits</a>
+                            <a href="#products" class="block text-xs hover:text-blue-500 transition">Aero-Flow Elite</a>
+                        </div>
+                    </div>
+                </div>
                 <a href="#products" class="nav-link hover:text-white transition">Catalog</a>
                 <a href="#tech" class="nav-link hover:text-white transition">Technology</a>
                 <a href="#factory" class="nav-link hover:text-white transition">Manufacturing</a>
@@ -339,6 +353,8 @@
         </div>
         <div class="max-w-7xl mx-auto mt-20 pt-12 border-t border-white/5 text-center text-xs text-gray-600 tracking-widest uppercase italic">
             © 2026 JULONG OPTICS CO., LTD. DOMAIN: JULONGOPTICS.COM
+            <br/>
+            <a href="/admin" class="mt-4 inline-block text-[10px] text-gray-700 hover:text-blue-500 transition-all opacity-50 hover:opacity-100 uppercase tracking-widest">Admin Login</a>
         </div>
     </footer>
 
@@ -395,4 +411,4 @@
         loadDynamicData();
     </script>
 </body>
-</html>
+    </html>
