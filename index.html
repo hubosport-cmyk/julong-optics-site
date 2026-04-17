@@ -14,9 +14,9 @@
         body { font-family: 'Inter', sans-serif; }
         
         .hero-gradient {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('https://sc02.alicdn.com/kf/A0b99cf55e7494266a41a08c7cc6e2cd7k.png');
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('https://sc02.alicdn.com/kf/A95546b1c18bd4e0698b3b14f22b2ae06e.png');
             background-size: cover;
-            background-position: center;
+            background-position: center 30%;
             background-attachment: fixed;
         }
         
@@ -109,16 +109,16 @@
         </div>
     </section>
 
-    <!-- Brands Trust -->
+    <!-- Quality Standards -->
     <section class="py-12 border-y border-white/5 bg-black/50">
         <div class="max-w-7xl mx-auto px-6 overflow-hidden">
-            <p class="text-center text-xs font-bold text-gray-500 uppercase tracking-[0.3em] mb-8">Trusted by global outdoor brands</p>
+            <p class="text-center text-xs font-bold text-gray-500 uppercase tracking-[0.3em] mb-8">Global Industry Standards</p>
             <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale hover:grayscale-0 transition duration-500">
-                <i class="fa-brands fa-stripe-s text-4xl"></i>
-                <i class="fa-brands fa-nfc-symbol text-4xl"></i>
-                <i class="fa-brands fa-battle-net text-4xl"></i>
-                <i class="fa-brands fa-vimeo text-4xl"></i>
-                <i class="fa-brands fa-unity text-4xl"></i>
+                <i class="fa-solid fa-certificate text-4xl"></i>
+                <i class="fa-solid fa-shield-halved text-4xl"></i>
+                <i class="fa-solid fa-award text-4xl"></i>
+                <i class="fa-solid fa-microchip text-4xl"></i>
+                <i class="fa-solid fa-check-double text-4xl"></i>
             </div>
         </div>
     </section>
@@ -202,7 +202,7 @@
                 </div>
                 <div class="relative" data-aos="zoom-in">
                     <div class="absolute -inset-10 bg-blue-600/10 blur-[100px] rounded-full"></div>
-                    <img src="https://sc02.alicdn.com/kf/Ad786e095fd1d4077a0ad8c841b4206c0i.png" class="relative rounded-3xl border border-white/10 shadow-2xl" alt="Tech">
+                    <img src="https://sc02.alicdn.com/kf/Ab0ada308ec26419fae3338a9bf0b915ev.png" class="relative rounded-3xl border border-white/10 shadow-2xl" alt="Tech">
                 </div>
             </div>
         </div>
@@ -370,7 +370,7 @@
                 
                 if (heroRes.ok) {
                     const hero = await heroRes.json();
-                    document.getElementById('hero-title').innerHTML = hero.title.replace(/\n/g, '<br/>');
+                    document.getElementById('hero-title').innerHTML = hero.title.replace(/\\n/g, '<br/>');
                     document.getElementById('hero-subtitle').innerText = hero.subtitle;
                     if (hero.bg_image) {
                         document.getElementById('hero-section').style.backgroundImage = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('${hero.bg_image}')`;
@@ -381,7 +381,7 @@
                     const settings = await settingsRes.json();
                     const waLink = document.querySelector('a[href*="wa.me"]');
                     if (waLink && settings.whatsapp) {
-                        waLink.href = `https://wa.me/${settings.whatsapp.replace(/\D/g, '')}`;
+                        waLink.href = `https://wa.me/${settings.whatsapp.replace(/\\D/g, '')}`;
                     }
                     const mailForm = document.querySelector('form[action^="mailto:"]');
                     if (mailForm && settings.email) {
