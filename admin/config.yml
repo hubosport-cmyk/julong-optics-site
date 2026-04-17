@@ -1,1 +1,47 @@
+backend:
+  name: github
+  repo: hubosport-cmyk/julong-optics-site
+  branch: main
+  site_domain: julongoptics.com
+  base_url: https://julong-auth-proxy.hubosport.workers.dev
+  auth_endpoint: auth
 
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "settings"
+    label: "Global Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "contact"
+        label: "Contact & Links"
+        file: "data/settings.json"
+        fields:
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string", hint: "Format: 86134..." }
+          - { label: "Inquiry Email", name: "email", widget: "string" }
+          
+  - name: "landing"
+    label: "Landing Page"
+    delete: false
+    files:
+      - name: "hero"
+        label: "Hero Section"
+        file: "data/hero.json"
+        fields:
+          - { label: "Main Title", name: "title", widget: "string" }
+          - { label: "Sub Title", name: "subtitle", widget: "text" }
+          - { label: "Hero Image URL", name: "bg_image", widget: "image" }
+
+  - name: "products"
+    label: "Products"
+    folder: "data/products"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Product Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list" }
